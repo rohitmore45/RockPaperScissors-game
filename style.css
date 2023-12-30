@@ -53,7 +53,7 @@ img {
   margin-top: 2rem;
 }
 #msg {
-  /* background-color: #081b31; */
+  /* background-color: #081b31;*/
   background-color: #fbc531;
   font-size: 2rem;
   display: inline;
@@ -70,4 +70,60 @@ img {
   font-size: 1.2rem;
   cursor: pointer;
   background-color: #fbc531;
+}
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 1rem;
+    height: 3rem;
+    line-height: 3rem; 
+  }
+  #msg {
+    font-size: 0.8rem;
+  }
+  .choice {
+    height: 95px;
+    width: 95px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    height: 90px;
+    width: 90px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .choices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+  #user-score,
+  #comp-score,
+  #draw-score {
+    font-size: 1rem;
+  }
+  .score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    gap: 2.5rem;
+  }
+  .btn {
+    margin-top: 8%;
+  }
+  .btn button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    background-color: #fbc531;
+  }
 }
